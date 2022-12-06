@@ -5,9 +5,10 @@ console.log(`Number of categories: ${categoriesArray}`);
 
 categories.forEach((el, i)=>{
     console.log(`Category: ${el.textContent}`);
-    const x = document.getElementsByClassName("item")[i];
-    const y = x.getElementsByTagName('li');
-const yArray = Array.from(y).length
-    console.log(`Elements: ${yArray}`);
+    const element = document
+    .getElementsByClassName("item")[i]
+    .getElementsByTagName('li');
+    const elementArray = Array.from(element).length;
+    console.log(`Elements: ${elementArray}`);
 });
 
