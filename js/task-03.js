@@ -21,4 +21,8 @@ const addImages = images
 
   gallery.insertAdjacentHTML("beforeend", addImages);
 
-  
+  const imgStyle = document.querySelectorAll('.gallery__image');
+
+  imgStyle.forEach((el)=>{
+el.style.maxWidth='500px';
+  });
