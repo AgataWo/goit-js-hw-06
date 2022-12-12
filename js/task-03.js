@@ -20,14 +20,3 @@ const addImages = images
   .join("");
 
   gallery.insertAdjacentHTML("beforeend", addImages);
-
-gallery.style.display ='flex';
-gallery.style.justifyContent ='space-evenly';
-gallery.style.listStyle ='none';
-
-
-  const imgStyle = document.querySelectorAll('.gallery__image');
-
-  imgStyle.forEach((el)=>{
-el.style.maxHeight='220px';
-  });
