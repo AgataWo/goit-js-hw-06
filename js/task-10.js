@@ -30,4 +30,5 @@ function createBoxes() {
 };
 
 destroy.addEventListener("click", () => {
+    boxes.innerHTML='';
 });
