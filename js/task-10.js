@@ -35,4 +35,6 @@ function createBoxes() {
 
 destroy.addEventListener("click", () => {
     boxes.innerHTML='';
+    document.querySelector("input").value="";
+    amount=0;
 });
