@@ -17,17 +17,21 @@ input.addEventListener("input", (ev) => {
 create.addEventListener("click", createBoxes);
 
 function createBoxes() {
-  for (let i = 1; i <= amount; i++) {
+    for (let i = 1; i <= amount; i++) {
     const newBox = document.createElement("div");
     newBox.classList.add("box");
     boxes.append(newBox);
-    let sizer = 20 + i * 10;
+    const amountBoxes = document.getElementsByClassName("box");
+    const amountBoxesArray = Array.from(amountBoxes).length;
+    let sizer = 20+10*amountBoxesArray;
     newBox.style.width = `${sizer}px`;
     newBox.style.height = `${sizer}px`;
     newBox.style.backgroundColor = getRandomHexColor();
-    console.log(newBox);
+    
+    console.log(sizer+10*amountBoxesArray);
   }
 };
+
 
 destroy.addEventListener("click", () => {
     boxes.innerHTML='';
