@@ -38,3 +38,4 @@ destroy.addEventListener("click", () => {
     document.querySelector("input").value="";
     amount=0;
 });
+//test
