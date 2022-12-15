@@ -5,11 +5,16 @@ form.addEventListener('submit', (event)=>{
     const {
       elements: { email, password }
     } = event.currentTarget;
-  
+
+    const formData = {
+      email: email.value,
+      password: password.value
+    };
+
     if (email.value === "" || password.value === "") {
        alert("Wszystkie pola powinny zostać wypełnione");
     }
   
-    console.log(`Email: ${email.value}, Password: ${password.value}`);
+    console.log(formData);
     event.currentTarget.reset();
   });
